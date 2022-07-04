@@ -1,0 +1,4 @@
+<launch>
+	<arg> name="" default="${find map_provider}/maps/temp_arena_map.yaml">
+	<node pkg="map_server" type="map_server" name="map_server" args="${arg map_file}"/>
+</launch>
